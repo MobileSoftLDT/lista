@@ -3,15 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En Mantenimiento</title>
+    <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <div class="container">
-        <div class="gear"></div>
-        <h1>En mantenimiento</h1>
-        <p>Volveremos pronto</p>
-        <p>MobileSoft</p> 
+        <div class="search-bar">
+            <button id="reset-button" style="display: none;">Inicio</button>
+            <input type="text" id="search" placeholder="Buscar producto...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <h1 text align="center">Tienda San Juan</h1>
+        <h2 class="productos-disponibles">Articulos Disponibles</h2>
+
+        <div id="inventory">
+            <div class="product">
+                <img src="images/cocalata.jpg" alt="Producto 1">
+                <div class="product-info">
+                    <h3>Coca Cola Lata</h3>
+                    <p class="product-price">$5.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/gallolata.png" alt="Producto 2">
+                <div class="product-info">
+                    <h3>Gallo Lata</h3>
+                    <p class="product-price">$10.0</p>
+                    <p class="no-disponible">Agotado</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/icelata.png" alt="Producto 3">
+                <div class="product-info">
+                    <h3>ICE Lata</h3>
+                    <p class="product-price">$7.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/monsteramarillo.jpg" alt="Producto 4">
+                <div class="product-info">
+                    <h3>Monster Amarillo</h3>
+                    <p class="product-price">$15.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/mazul.jpg" alt="Producto 5">
+                <div class="product-info">
+                    <h3>Monster Azul</h3>
+                    <p class="product-price">$15.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/monstermorado.png" alt="Producto 6">
+                <div class="product-info">
+                    <h3>Monster Morado</h3>
+                    <p class="product-price">$15.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/mosntermango.png" alt="Producto 7">
+                <div class="product-info">
+                    <h3>Monster Mango</h3>
+                    <p class="product-price">$15.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/pepsi lata.png" alt="Producto 8">
+                <div class="product-info">
+                    <h3>Pepsi Lata</h3>
+                    <p class="product-price">$5.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/chetos.jpg" alt="Producto 9">
+                <div class="product-info">
+                    <h3>chetos</h3>
+                    <p class="product-price">$2.0</p>
+                    <p class="availability">en existencia</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/quetzaltecanaranja.png" alt="Producto 10">
+                <div class="product-info">
+                    <h3>Quezalteca Naranja</h3>
+                    <p class="product-price">$10</p>
+                    <p class="no-disponible">Agotado</p>
+                </div>
+            </div>
+
+            
+            <div class="product">
+                <img src="images/quetzalteca fresa.jpg" alt="Producto 11">
+                <div class="product-info">
+                    <h3>Quezalteca Horchata</h3>
+                    <p class="product-price">$10</p>
+                    <p class="no-disponible">Agotado</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <img src="images/blulevel.jpg" alt="Producto 12">
+            <div class="product-info">
+                <h3>Blu Level</h3>
+                <p class="product-price">$500</p>
+                <p class="availability">en existencia</p>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <img src="images/redlevel.jpg" alt="Producto 13">
+            <div class="product-info">
+                <h3>Red Level</h3>
+                <p class="product-price">$300</p>
+                <p class="availability">en existencia</p>
+            </div>
+        </div>
+
+
+        <div id="no-results" style="display:none;">No se encontraron productos.</div>
+        <footer>
+            <p>&copy; 2024 MobileSoft. Todos los derechos reservados.</p>
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
